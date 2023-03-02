@@ -1,0 +1,47 @@
+.contacts {
+  position: relative;
+  &_wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &_socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  &_button {
+    margin-bottom: 80px;
+    width: 180px;
+    height: 40px;
+    background-color: #070707;
+    color: #FFFFFF;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  &_logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .contacts {
+    &_socials {
+      gap: 80px;
+    }
+  }
+}
+
+

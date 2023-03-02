@@ -1,0 +1,18 @@
+.footer_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #828282; }
+.footer_top-logo {
+  width: 40px; }
+.footer_tag {
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282; }
+  .footer_tag:hover {
+    color: #828282;
+    font-weight: 500; }
+
+/*# sourceMappingURL=footer.css.map */

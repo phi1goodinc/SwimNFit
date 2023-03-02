@@ -1,0 +1,15 @@
+@import "_normalize.css";
+@import "_fonts.css";
+@import "global.css";
+@import "overall.css";
+
+
+/*components css*/
+@import "components/header.css";
+@import "components/introduction.css";
+@import "components/about-me.css";
+@import "components/skills.css";
+@import "components/recommendations.css";
+@import "components/contacts.css";
+@import "components/footer.css";
+@import "components/form.css";

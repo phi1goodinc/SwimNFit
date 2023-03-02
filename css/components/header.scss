@@ -1,0 +1,114 @@
+.header {
+
+  &_items {
+    padding: 30px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #828282;
+    color: #828282;
+  }
+
+  &_burger {
+    display: none;
+    width: 33px;
+    height: 28px;
+    position: absolute;
+    top: 41px;
+    right: 5%;
+  }
+
+  &_close {
+    display: none;
+  }
+}
+
+.burger {
+  &_line {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+
+    &-first {
+      top: 0;
+    }
+
+    &-third {
+      bottom: 0;
+    }
+
+    &-second {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%)
+    }
+  }
+}
+
+
+@media (max-width: 780px) {
+  .header {
+    &_items-wrapper {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #FFFFFF;
+      z-index: 10;
+      padding: 60px 30px;
+      -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      transform: translateX(100%);
+      -webkit-transition: .2s all linear;
+      -o-transition: .2s all linear;
+      transition: .2s all linear;
+
+      &_active {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
+
+    &_items {
+      flex-direction: column;
+      gap: 60px;
+      border-bottom: none;
+      padding: 0;
+    }
+
+    &_item {
+      font-family: 'Gilroy-Bold', sans-serif;
+      font-size: 34px;
+      line-height: 42px;
+    }
+
+    &_close {
+      display: block;
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      z-index: 11;
+    }
+
+    &_burger {
+      display: block;
+    }
+  }
+}
+
+@media  (max-width: 480px)  {
+  .header {
+    &_item {
+      font-size: 30px;
+    }
+  }
+}
+
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swim & Fit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/swimming-silhouette.png">
+    <script async src="js/main.js"></script>
+</head>
+
+<body>
+
+<header id="header" class="header site-container">
+    <nav class="header_items-wrapper">
+        <ul class="flex header_items">
+            <li class="header_item"><a class="header_link" href="#home">Home</a></li>
+            <li class="header_item"><a class="header_link" href="#about-me">About me</a></li>
+            <li class="header_item"><a class="header_link" href="#skills">Skills</a></li>
+            <li class="header_item"><a class="header_link" href="#recommendations">Recommendations</a></li>
+            <li class="header_item"><a class="header_link" href="#contacts">Contacts</a></li>
+        </ul>
+        <div class="header_close">
+            <span class="close-line"></span>
+            <span class="close-line"></span>
+        </div>
+    </nav>
+    <div class="header_burger burger">
+        <span class="burger_line burger_line-first"></span>
+        <span class="burger_line burger_line-second"></span>
+        <span class="burger_line burger_line-third"></span>
+    </div>
+</header>
+<main>
+    <section id="home" class="introduction site-container">
+        <div class="flex introduction_about">
+            <h1 class="introduction_name">Evgenii<br>Petrow</h1>
+            <p>Swimmer | Coach, <br>
+                30 years old, Moscow</p>
+            <img class="introduction_logo" src="images/swimming.svg" alt="swimming logo">
+        </div>
+        <img class="introduction_poster" src="images/poster.jpg" alt="poster">
+        <img class="introduction_poster-long" src="images/poster-long.jpg" alt="poster">
+    </section>
+    <section id="about-me" class="about-me">
+        <div class="about-me_container flex">
+            <h1>About me</h1>
+            <div>
+                <p>Hi, I'm Evgenii - swimmer and coach from Moscow.<br>
+                    I'm winner of different swimming championships.</p>
+            </div>
+            <div>
+                <p>I work as coach from 2011.<br>
+                    Have a lot of experience and certificates in swimming.</p>
+            </div>
+            <div>
+                <p>Ready to help you improve your swimming skills.<br>
+                    and get a better body shape.</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills site-container">
+        <h1>Skills</h1>
+        <p>I work in such directions as</p>
+        <ul class="skills_container">
+            <li class="skills_one-skill">
+                <img src="images/weight.svg" alt="training logo">
+                <p>Gym<br>training</p>
+            </li>
+            <li class="skills_one-skill">
+                <img src="images/swimming.svg" alt="swimming logo">
+                <p>Swim<br>training</p>
+            </li>
+            <li class="skills_one-skill">
+                <img src="images/online-learning.svg" alt="online training logo">
+                <p>Online<br>training</p>
+            </li>
+        </ul>
+    </section>
+    <section id="recommendations" class="recommendations">
+        <div class="recommendations_wrapper site-container">
+            <h1 class="recommendations_title">Recommendations</h1>
+            <ul>
+                <li class="recommendations_one">
+                    <img class="recommendations_avatar"
+                         src="images/user.png"
+                         alt="user_avatar">
+                    <div>
+                        <div class="recommendations_data">
+                            <h2>Bonnie W.</h2>
+                            <time>23.03.2021</time>
+                        </div>
+                        <p class="recommendations_comment">
+                            We enjoyed working out with Ewgenii very much. We are an older couple who appreciates staying in shape. Ewgenii is very good at functional training. Friendly,
+                            efficient, and very professional.
+                        </p></div>
+                </li>
+                <li class="recommendations_one">
+                    <img class="recommendations_avatar"
+                         src="images/user.png"
+                         alt="user_avatar">
+                    <div>
+                        <div class="recommendations_data">
+                            <h2>Elena M.</h2>
+                            <time>27.02.2021</time>
+                        </div>
+                        <p class="recommendations_comment">
+                            The instructor is very knowledgeable and encourages you by setting attainable goals. I would especially recommend Kelly to people who haven't been active for some time.
+                        </p></div>
+                </li>
+                <li class="recommendations_one">
+                    <img class="recommendations_avatar"
+                         src="images/user.png"
+                         alt="user_avatar">
+                    <div>
+                        <div class="recommendations_data">
+                            <h2>Tim K.</h2>
+                            <time>29.01.2021</time>
+                        </div>
+                        <p class="recommendations_comment">
+                            I was skeptical at first about virtual training, but my trainer is great and has made such a difference in my overall health.
+                        </p></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="contacts" class="contacts">
+        <div class="contacts_wrapper">
+
+            <div class="form-popup" id="myForm">
+                <form id='form' class="form site-container" action="send.php" target="hiddenframe" method="POST">
+
+                    <input class="form__input" type="text" id="name" name="name" placeholder="Your name">
+                    <input class="form__input" type="tel" id="phone" name="phone" placeholder="Phone number">
+                    <textarea class="form__textarea" name="message" placeholder="Message"></textarea>
+                    <input class="form__button-submit" type="submit" value="Send message">
+                </form>
+                <div class="form__close" onclick="closeForm()">
+                    <span class="close-line"></span>
+                    <span class="close-line"></span>
+                </div>
+            </div>
+
+            <h1>Contacts</h1>
+            <p>Want to know more or just chat? <br>You are welcome!</p>
+            <button class="contacts_button" onclick="openForm()">Send message</button>
+            <ul class="contacts_socials">
+                <li class="contacts_logo contacts_logo-instagram"><a href="https://www.instagram.com/swim_n_fit" target="_blank">
+                        <img src="images/instagram.svg" alt="instagram logo"></a>
+                </li>
+                <li class="contacts_logo contacts_logo-vk">
+                    <a href="https://vk.com/swimnfit" target="_blank"><img src="images/vk.svg" alt="vk logo"></a>
+                </li>
+                <li class="contacts_logo contacts_logo-telegram">
+                    <a href="https://t.me/houston13131010" target="_blank"><img src="images/telegram.svg" alt="telegram logo"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-submitted__window site-container">
+            <text>Your message successfully sent.<br/>
+                I'll contact you as soon as possibly.
+            </text>
+            <div class="form-submitted__close">
+                <span class="close-line"></span>
+                <span class="close-line"></span>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer site-container">
+    <div class="footer_wrapper">
+        <a href="https://www.instagram.com/philgoodinc" target="_blank" class="footer_tag">by philgoodinc</a>
+        <a href="#header"><img class="footer_top-logo" src="images/up-chevron.svg" alt="to top"></a>
+    </div>
+</footer>
+
+<iframe name="hiddenframe" id="hiddenframe" style="display: none;"></iframe>
+</body>
+
+</html>
